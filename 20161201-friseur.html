@@ -10,6 +10,8 @@
 
 <body>
     
+    <!-- Pop Up Fenster -->
+    
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -27,6 +29,7 @@
       </div>
     </div>  
     
+    <!-- Navigationsleiste -->
     
     <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -37,9 +40,9 @@
             <div>
                 <form class="navbar-form navbar-right">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Our services</a></li>
-                        <li><a href="#">Make an appointment</a></li>
-                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#2">Our services</a></li>
+                        <li><a href="#3">Make an appointment</a></li>
+                        <li><a href="#4">FAQ</a></li>
                         <li><a href="#">About us</a></li>
                         <div class="form-group">
                              <input type="text" class="form-control" placeholder="Search">
@@ -49,6 +52,8 @@
             </div>
         </div>
     </nav>
+    
+    <!-- Slideshow -->
     
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
@@ -60,21 +65,21 @@
 
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img src="friseur1.jpg" alt="Friseursalon1">
+          <img class="img-responsive center-block" src="friseur1.jpg" alt="Friseursalon1" >
              <div class="carousel-caption">
              <h2>Bester Service</h2>
              </div>
         </div>
     
        <div class="item">
-          <img src="friseur2.jpg" alt="Friseursalon2">
+          <img class="img-responsive center-block"  src="friseur2.jpg" alt="Friseursalon2">
               <div class="carousel-caption">
               <h2>Entspannung</h2>
               </div>
        </div>
       
         <div class="item">
-          <img src="friseur3.jpg" alt="Friseursalon3">
+          <img class="img-responsive center-block" src="friseur3.jpg" alt="Friseursalon3">
               <div class="carousel-caption">
               <h2>Wir freuen uns auf Sie!</h2>
               </div>
@@ -90,13 +95,15 @@
           </a>
     </div>
         
-    <div class="container-fluid trennlinie">
+    <!-- Services -->
+        
+    <div class="container-fluid trennlinie" id="2">
         <h2 class="text-center">Our Services</h2>
         <br/>
     </div>
 
         <div class="row">
-            <div class="col-md-3 col-md-offset-2">
+            <div class="col-md-4">
                 <span class="h3">Styling </span> <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
                 <br/>
                 <img src="friseur1.jpg" class="vorschau"/>
@@ -104,14 +111,14 @@
             </div>
           
             
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <span class="h3">Coloring</span> <span class="glyphicon glyphicon-tint" aria-hidden="true"></span>
                 <br/>
                 <img src="friseur2.jpg" class="vorschau"/>
             </div>
           
 
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <span class="h3">Haircut</span> <span class="glyphicon glyphicon-scissors" aria-hidden="true"></span>
                 <br/>
                 <img src="friseur3.jpg" class="vorschau"/>
@@ -119,16 +126,16 @@
             
         </div>    
 
+    <!-- Appointment -->
         
-    <div class="container-fluid trennlinie">
+    <div class="container-fluid trennlinie" id="3">
         <h2 class="text-center">Make an appointment</h2>
         <br/>
         
     <div class="row">
         
-            <div class="col-md-1">
-            </div>
-            
+            <div class="col-md-1"></div>
+
             <div class="col-md-4">
                 <form>
                     <div class="form-group">
@@ -150,9 +157,8 @@
                 <button type="send" class="btn btn-default center-block">Send</button>
             </div>
         
-            <div class="col-md-1">
-            </div>
-
+            <div class="col-md-2"></div>
+        
             <div class="col-md-4">
                 <table class="table table-bordered">
                     <thead>
@@ -201,8 +207,10 @@
         </div>
         
     </div>
-        
-    <div class="container-fluid trennlinie">
+    
+    <!-- FAQ -->    
+    
+    <div class="container-fluid trennlinie" id="4">
         <h2 class="text-center">FAQ</h2>
         <br/>
         
@@ -222,11 +230,15 @@
             </table>
     </div>
     
+        <!-- Abschluss -->
+        
         <div class="container-fluid trennlinie"></div>
         
             <div class="row">
+                
+                <div class="col-md-1"></div>
 
-                <div class="col-md-3 col-md-offset-2">
+                <div class="col-md-3">
                     <h2>Contact</h2>
                     <p>Tax Number</p>
                     <p>Friseurgasse 5, 1020 Wien</p>
@@ -237,6 +249,8 @@
                 <div class="col-md-3">
                 <img src="friseur4.jpg" class="abschlussbild"/>
                 </div>
+                
+                <div class="col-md-1"></div>
 
                 <div class="col-md-3">
                     <h2>Navigation</h2>
@@ -246,6 +260,13 @@
                     <p><a href="#">About us</a></p>
                 </div>
 
+                <div class="col-md-1"></div>
             </div>
-         
+        
+         <div class="container-fluid trennlinie"></div>
+        
+        <!-- Test -->
+        
+   <div class="bildrahmen"><img src="friseur1.jpg"/></div>  
+        
 </body>
